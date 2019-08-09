@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+form { 
+  display: block;
+  margin-top: 0em;
+}
+</style>
+</head>
+<body 
+margin="0"
+padding="0"
+margin-bottom="0" 
+margin-left="0">
+
+<form action="" class="form-login"  method="post" /> 
+First Name :<input name="fname" type="text" id="fname" required placeholder="First Name" /><br />
+Last Name: <input name="lname" type="text" id="lname" required placeholder="Last Name" /><br />
+Email: <input name="email" type="email" id="email" required placeholder="Email" /><br />
+
+<label>City:
+<input list="cities" name="mycity" id="City"/></label>
+<datalist id="cities">
+  <option value="Delhi">
+  <option value="Mumbai">
+  <option value="Chennai">
+  <option value="Kolkata">
+  <option value="Hyderabad">
+  <option value="Bangalore">
+</datalist>
+<br />
+
+Age:<input name="age" type="number" id="age" required placeholder="Age" /><br />
+Video Choice: <input name="choice" type="URL"  id="url"required placeholder="Video Link" /><br />
+</form>
+
+<button onclick="store()" type="button">Submit</button>
+
+<script  type="text/javascript">
+  function store(){
+     var fname= document.getElementById("fname");
+	 var lname= document.getElementById("lname");
+	 var email= document.getElementById("email");
+	 var city= document.getElementById("City");
+	 var age= document.getElementById("age");
+	 var vidchoice= document.getElementById("url");
+     localStorage.setItem("Fname", fname.value);
+	 localStorage.setItem("Lname", lname.value);
+	 localStorage.setItem("Email", email.value);
+	 localStorage.setItem("City", city.value);
+	 localStorage.setItem("Age", age.value);
+	 localStorage.setItem("Video", vidchoice.value);
+    }
+</script>
+
+
+
+
+</body>
+</html>

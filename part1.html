@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+body {
+  background-image: url("pics.jpg");
+  background-repeat: no-repeat;
+  background-size:100% 300px;
+  
+}
+
+h3 {
+  position: absolute;
+  left: 90%;
+  top: 0px;
+}
+h1 {
+  position: absolute;
+  left: 45%;
+  top: 0px;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+</head>
+<body>
+<h1 style="color:white" align="center"><u>Generic Heading</u></h1>
+<h3 id="demo" style="color:white" align="right"><u>Date</u></h3>
+
+<script>
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+</script>
+<br />
+<br />
+<br />
+<br />
+<UL type="DISC">
+	<a href="home.html"><li style="color:white">Home</li></a>
+	<a href="aboutus.html"><li style="color:white">About Us</li></a>
+	<a href="career.html"><li style="color:white">Career</li></a>
+</UL>
+</body>
+</html>
